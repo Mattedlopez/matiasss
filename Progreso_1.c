@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void primo(int a){
-    int i, j, p, np;
+    int i, j;
 
     for ( i = 0; i < a ; i++){
         if (a%i==0){
@@ -10,10 +10,8 @@ void primo(int a){
     }
     if (j<=2){
         printf("Primo\n");
-        p=+1;
     }else{
         printf("No Primo\n");
-        np=+1;
     }
 }
 
@@ -24,11 +22,11 @@ int main(){
     printf("ingresa la cantidad de numeros que vas  a ingresar: ");
     scanf("%d", &n);
 
-    for ( i = 0; i < n; i++){
+    for ( i = 0; i <= n; i++){
         printf("%d: Ingresa un numero: ", i+1);
         scanf("%d", &a[i]);
         primo(a[i]);
-        if (primo(a[i]) = "primo"){
+        if ( primo(a[i]) = "primo"){
             p=+1;
         }else{
             np=+1;
